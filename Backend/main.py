@@ -26,7 +26,7 @@ model = SentenceTransformer("all-MiniLM-L6-v2")
 # FastAPI app
 app = FastAPI()
 
-app.mount("/static", StaticFiles(directory="../Frontend"), name="static")
+app.mount("/static", StaticFiles(directory="Static"), name="static")
 
 
 app.add_middleware(
@@ -39,7 +39,7 @@ app.add_middleware(
 
 @app.get("/")
 async def read_index():
-    return FileResponse("../Frontend/index.html")
+    return FileResponse(os.path.join("Static", "index.html"))
 
 # Request schema
 class Query(BaseModel):
