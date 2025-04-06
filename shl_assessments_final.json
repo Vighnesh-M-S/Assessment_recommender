@@ -1,0 +1,139 @@
+[
+  {
+    "Assignment_Name": "Account Manager Solution",
+    "Assignment_Link": "https://www.shl.com/solutions/products/product-catalog/view/account-manager-solution/",
+    "Remote_Testing_Support": true,
+    "Adaptive_IRT_Support": true,
+    "Test_Type": [
+      "C",
+      "P",
+      "A",
+      "B"
+    ]
+  },
+  {
+    "Assignment_Name": "Administrative Professional - Short Form",
+    "Assignment_Link": "https://www.shl.com/solutions/products/product-catalog/view/administrative-professional-short-form/",
+    "Remote_Testing_Support": true,
+    "Adaptive_IRT_Support": true,
+    "Test_Type": [
+      "A",
+      "K",
+      "P"
+    ]
+  },
+  {
+    "Assignment_Name": "Agency Manager Solution",
+    "Assignment_Link": "https://www.shl.com/solutions/products/product-catalog/view/agency-manager-solution/",
+    "Remote_Testing_Support": true,
+    "Adaptive_IRT_Support": true,
+    "Test_Type": [
+      "A",
+      "B",
+      "P",
+      "S"
+    ]
+  },
+  {
+    "Assignment_Name": "Apprentice + 8.0 Job Focused Assessment",
+    "Assignment_Link": "https://www.shl.com/solutions/products/product-catalog/view/apprentice-8-0-job-focused-assessment-4261/",
+    "Remote_Testing_Support": true,
+    "Adaptive_IRT_Support": false,
+    "Test_Type": [
+      "B",
+      "P"
+    ]
+  },
+  {
+    "Assignment_Name": "Apprentice 8.0 Job Focused Assessment",
+    "Assignment_Link": "https://www.shl.com/solutions/products/product-catalog/view/apprentice-8-0-job-focused-assessment/",
+    "Remote_Testing_Support": true,
+    "Adaptive_IRT_Support": false,
+    "Test_Type": [
+      "B",
+      "P"
+    ]
+  },
+  {
+    "Assignment_Name": "Bank Administrative Assistant - Short Form",
+    "Assignment_Link": "https://www.shl.com/solutions/products/product-catalog/view/bank-administrative-assistant-short-form/",
+    "Remote_Testing_Support": true,
+    "Adaptive_IRT_Support": false,
+    "Test_Type": [
+      "A",
+      "B",
+      "K",
+      "P"
+    ]
+  },
+  {
+    "Assignment_Name": "Bank Collections Agent - Short Form",
+    "Assignment_Link": "https://www.shl.com/solutions/products/product-catalog/view/bank-collections-agent-short-form/",
+    "Remote_Testing_Support": true,
+    "Adaptive_IRT_Support": false,
+    "Test_Type": [
+      "A",
+      "B",
+      "P"
+    ]
+  },
+  {
+    "Assignment_Name": "Bank Operations Supervisor - Short Form",
+    "Assignment_Link": "https://www.shl.com/solutions/products/product-catalog/view/bank-operations-supervisor-short-form/",
+    "Remote_Testing_Support": true,
+    "Adaptive_IRT_Support": true,
+    "Test_Type": [
+      "A",
+      "B",
+      "P",
+      "S"
+    ]
+  },
+  {
+    "Assignment_Name": "Bilingual Spanish Reservation Agent Solution",
+    "Assignment_Link": "https://www.shl.com/solutions/products/product-catalog/view/bilingual-spanish-reservation-agent-solution/",
+    "Remote_Testing_Support": true,
+    "Adaptive_IRT_Support": true,
+    "Test_Type": [
+      "B",
+      "P",
+      "S",
+      "A"
+    ]
+  },
+  {
+    "Assignment_Name": "Bookkeeping, Accounting, Auditing Clerk Short Form",
+    "Assignment_Link": "https://www.shl.com/solutions/products/product-catalog/view/bookkeeping-accounting-auditing-clerk-short-form/",
+    "Remote_Testing_Support": true,
+    "Adaptive_IRT_Support": true,
+    "Test_Type": [
+      "P",
+      "S",
+      "K",
+      "B",
+      "A"
+    ]
+  },
+  {
+    "Assignment_Name": "Branch Manager - Short Form",
+    "Assignment_Link": "https://www.shl.com/solutions/products/product-catalog/view/branch-manager-short-form/",
+    "Remote_Testing_Support": true,
+    "Adaptive_IRT_Support": false,
+    "Test_Type": [
+      "A",
+      "B",
+      "P"
+    ]
+  },
+  {
+    "Assignment_Name": "Cashier Solution",
+    "Assignment_Link": "https://www.shl.com/solutions/products/product-catalog/view/cashier-solution/",
+    "Remote_Testing_Support": true,
+    "Adaptive_IRT_Support": true,
+    "Test_Type": [
+      "B",
+      "A",
+      "P"
+    ]
+  }
+]
