@@ -1,7 +1,7 @@
 async function processText() {
     let text = document.getElementById("textInput").value;
 
-    let response = await fetch("http://127.0.0.1:9000/process_text/", {
+    let response = await fetch("http://127.0.0.1:9000/query_assessments/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text: text })
