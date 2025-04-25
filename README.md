@@ -2,7 +2,8 @@
 
 This is a GenAI-powered application that recommends the most relevant SHL assessments based on a user's natural language query or job description. It includes a FastAPI backend, a static HTML/JS/CSS frontend, and an in-memory vector search using sentence embeddings.
 
-Live Link : [https://assessment-recommender-new.onrender.com](https://assessment-recommender-new.onrender.com))
+Live Link 1 : [https://assessment-recommender-new.onrender.com](https://assessment-recommender-new.onrender.com)
+Live Link 2 : [https://assessment-recommender-new.onrender.com](https://assessment-recommender-new.onrender.com)
 
 ---
 
@@ -87,8 +88,8 @@ The system will return the top 10 SHL assessments based on semantic similarity.
 
 ## 🚢 Deployment (Render)
 
-1. Go to [https://assessment-recommender-new.onrender.com](https://huggingface.co/spaces/VGreatVig07/Assignment_Recommender))
-2. Go to [https://assessment-recommender-new.onrender.com](https://assessment-recommender-new.onrender.com))
+1. Go to [https://assessment-recommender-new.onrender.com](https://huggingface.co/spaces/VGreatVig07/Assignment_Recommender)
+2. Go to [https://assessment-recommender-new.onrender.com](https://assessment-recommender-new.onrender.com)
 
 ---
 
