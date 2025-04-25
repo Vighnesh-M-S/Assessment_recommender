@@ -1,10 +1,13 @@
 services:
   - type: web
-    name: shl-fastapi-backend
+    name: shl-streamlit-app
     runtime: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: uvicorn main:app --host 0.0.0.0 --port 8000
+    buildCommand: pip install --no-cache-dir -r requirements.txt
+    startCommand: streamlit run app.py --server.port 8000 --server.enableCORS false
     envVars:
       - key: PORT
         value: 8000
+      - key: API_KEY
+        value: AIzaSyCEF9yd8lx8LPorSGvs1lnYH-yk5o5SlAM  # You can securely add this in the Render dashboard
     plan: free
+    autoDeploy: true
