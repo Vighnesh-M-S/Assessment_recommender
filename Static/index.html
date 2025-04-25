@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SHL Assessment Recommender</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f6f8;
+    }
+
+    input, button {
+      padding: 10px;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .results {
+      margin-top: 20px;
+    }
+
+    .card {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+      background: #ffffff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>🔍 SHL Assessment Recommender</h2>
+  <input type="text" id="queryInput" placeholder="Enter your job role or requirement..." size="50">
+  <button onclick="sendQuery()">Search</button>
+
+  <div class="results" id="results"></div>
+
+  <script>
+    async function sendQuery() {
+      const query = document.getElementById("queryInput").value;
+      const resultsDiv = document.getElementById("results");
+      resultsDiv.innerHTML = "<p>Searching...</p>";
+
+      try {
+        const response = await fetch("http://localhost:8000/query", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({ query })
+        });
+
+        const data = await response.json();
+
+        if (data.recommendations && data.recommendations.length > 0) {
+          resultsDiv.innerHTML = data.recommendations.map((r, index) => 
+            <div class="card">
+              <h3>🏆 Rank ${index + 1}: ${r.Assignment_Name}</h3>
+              <p>🔗 <a href="${r.Assignment_Link}" target="_blank">${r.Assignment_Link}</a></p>
+              <p>🧪 Test Type: ${r.Test_Type}</p>
+              <p>⏱️ Duration: ${r.Approximate_Completion_Time} mins</p>
+              <p>🌐 Remote Testing: ${r.Remote_Testing_Support}</p>
+              <p>📊 Adaptive/IRT: ${r.Adaptive_IRT_Support}</p>
+              <p>👤 Job Levels: ${r.Job_Levels}</p>
+            </div>
+          ).join("");
+        } else {
+          resultsDiv.innerHTML = "<p>No results found.</p>";
+        }
+      } catch (error) {
+        resultsDiv.innerHTML = <p style="color:red;">Error: ${error.message}</p>;
+      }
+    }
+  </script>
+</body>
+</html>
