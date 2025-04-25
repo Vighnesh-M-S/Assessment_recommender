@@ -22,13 +22,12 @@ Live Link : [https://assessment-recommender-new.onrender.com](https://assessment
 
 ```
 assignment recommender/
-├── Backend/
-│   ├── main.py               # FastAPI backend
-│   ├── requirements.txt      # Python dependencies
-├── Frontend/
-│   ├── index.html            # Frontend UI
-│   ├── styles.css            # Styling
-│   └── script.js             # Frontend logic (querying backend)
+|
+│── app.py               # FastAPI backend
+│── requirements.txt      # Python dependencies
+|── shl_combined_assessments.csv  
+│── shl_vector_index.faiss     
+│── render.yaml    
 ├── .env                      # Environment variables (if any)
 ├── .gitignore
 └── README.md
@@ -55,24 +54,14 @@ source venv/bin/activate
 ### 3. Install Dependencies
 
 ```bash
-pip install -r Backend/requirements.txt
+pip install -r requirements.txt
 ```
 
 ### 4. Run the Backend Server
 
 ```bash
-uvicorn Backend.main:app --reload
+uvicorn streamlit run app.py
 ```
-
-By default, the backend runs at: `http://127.0.0.1:8000`
-
----
-
-## 🌐 Frontend Usage
-
-Open the `Frontend/index.html` file in a browser.
-
-The frontend sends queries to the FastAPI backend and displays the top SHL assessments relevant to the user's input.
 
 ---
 
@@ -89,17 +78,17 @@ The system will return the top 10 SHL assessments based on semantic similarity.
 ## 🛠 Tech Stack
 
 - 🐍 Python 3.10+
-- 🦋 FastAPI
+- 🎏 Streamlit
 - 🤗 Sentence Transformers (`all-MiniLM-L6-v2`)
 - 🧠 FAISS for vector search
-- 🔧 HTML/CSS/JavaScript
 - 🖼️ Pandas for tabular data processing
 
 ---
 
 ## 🚢 Deployment (Render)
 
-1. Go to [https://assessment-recommender-new.onrender.com](https://assessment-recommender-new.onrender.com))
+1. Go to [https://assessment-recommender-new.onrender.com](https://huggingface.co/spaces/VGreatVig07/Assignment_Recommender))
+2. Go to [https://assessment-recommender-new.onrender.com](https://assessment-recommender-new.onrender.com))
 
 ---
 
