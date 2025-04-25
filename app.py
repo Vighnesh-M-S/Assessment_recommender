@@ -15,7 +15,7 @@ gemini_model = genai.GenerativeModel("gemini-2.0-flash")
 # Load vector index and dataframe
 index = faiss.read_index("shl_vector_index.faiss")
 df = pd.read_csv("shl_combined_assessments.csv")
-model = SentenceTransformer("all-MiniLM-L6-v2")
+model = SentenceTransformer("all-MiniLM-L6-v2", device="cpu")
 
 # Helper to format the result row
 def format_row(row):
