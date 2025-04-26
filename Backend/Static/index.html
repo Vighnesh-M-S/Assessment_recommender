@@ -52,7 +52,7 @@
       resultsDiv.innerHTML = "<p>Searching...</p>";
 
       try {
-        const response = await fetch("http://localhost:9090/query", {
+        const response = await fetch("/query", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
