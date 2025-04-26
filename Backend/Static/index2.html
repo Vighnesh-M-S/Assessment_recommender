@@ -52,7 +52,7 @@
       resultsDiv.innerHTML = "<p>Searching...</p>";
 
       try {
-        const response = await fetch("/query", {   // <-- change if needed
+        const response = await fetch("https://assessment-recommender-new.onrender.com/query", {   
           method: "POST",
           headers: {
             "Content-Type": "application/json"
