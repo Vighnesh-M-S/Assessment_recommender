@@ -5,6 +5,8 @@ This is a GenAI-powered application that recommends the most relevant SHL assess
 Live Link 1 : [https://assessment-recommender-new.onrender.com](https://assessment-recommender-new.onrender.com)
 Live Link 2 : [https://assessment-recommender-new.onrender.com](https://assessment-recommender-new.onrender.com)
 
+<img width="608" alt="Screenshot 2025-04-25 at 9 54 49 PM" src="https://github.com/user-attachments/assets/4c53f71f-0621-4f66-b201-cfb0ef3f1ac0" />
+
 ---
 
 ## 🚀 Features
@@ -73,6 +75,9 @@ Try inputting:
 > "We're hiring a senior software engineer with strong coding and problem-solving skills."
 
 The system will return the top 10 SHL assessments based on semantic similarity.
+
+<img width="1438" alt="Screenshot 2025-04-25 at 9 55 34 PM" src="https://github.com/user-attachments/assets/1182ab50-2032-4d9a-ac47-16a50b1a7fbc" />
+
 
 ---
 
