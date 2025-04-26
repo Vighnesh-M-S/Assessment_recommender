@@ -52,11 +52,7 @@
       resultsDiv.innerHTML = "<p>Searching...</p>";
 
       try {
-<<<<<<< HEAD
-        const response = await fetch("/query", {
-=======
-        const response = await fetch("http://localhost:9000/query", {
->>>>>>> 0d232cd276498d8720d1598f949141dbc2fe8420
+        const response = await fetch("/query", {   // <-- change if needed
           method: "POST",
           headers: {
             "Content-Type": "application/json"
@@ -67,7 +63,7 @@
         const data = await response.json();
 
         if (data.recommendations && data.recommendations.length > 0) {
-          resultsDiv.innerHTML = data.recommendations.map((r, index) => 
+          resultsDiv.innerHTML = data.recommendations.map((r, index) => `
             <div class="card">
               <h3>🏆 Rank ${index + 1}: ${r.Assignment_Name}</h3>
               <p>🔗 <a href="${r.Assignment_Link}" target="_blank">${r.Assignment_Link}</a></p>
@@ -77,12 +73,12 @@
               <p>📊 Adaptive/IRT: ${r.Adaptive_IRT_Support}</p>
               <p>👤 Job Levels: ${r.Job_Levels}</p>
             </div>
-          ).join("");
+          `).join("");
         } else {
           resultsDiv.innerHTML = "<p>No results found.</p>";
         }
       } catch (error) {
-        resultsDiv.innerHTML = <p style="color:red;">Error: ${error.message}</p>;
+        resultsDiv.innerHTML = `<p style="color:red;">Error: ${error.message}</p>`;
       }
     }
   </script>

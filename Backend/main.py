@@ -39,7 +39,7 @@ app.add_middleware(
 
 @app.get("/")
 async def read_index():
-    return FileResponse(os.path.join("Static", "index.html"))
+    return FileResponse(os.path.join("Static", "index2.html"))
 
 # Request schema
 class Query(BaseModel):
