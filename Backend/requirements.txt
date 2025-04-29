@@ -6,4 +6,4 @@ faiss-cpu
 #python-dotenv
 fastapi
 uvicorn
-hf_xet
+#hf_xet
