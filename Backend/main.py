@@ -2,8 +2,8 @@ from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
-import google.generativeai as genai
-from dotenv import load_dotenv
+#import google.generativeai as genai
+#from dotenv import load_dotenv
 from fastapi.middleware.cors import CORSMiddleware
 import os
 import json
@@ -14,9 +14,9 @@ import uvicorn
 import math
 
 # Load environment variables and configure Gemini
-load_dotenv()
-genai.configure(api_key=os.getenv("API_KEY"))
-gemini_model = genai.GenerativeModel("gemini-2.0-flash")
+#load_dotenv()
+#genai.configure(api_key=os.getenv("API_KEY"))
+#gemini_model = genai.GenerativeModel("gemini-2.0-flash")
 
 # Load vector index and dataframe
 index = faiss.read_index("shl_vector_index.faiss")
