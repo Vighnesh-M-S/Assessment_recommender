@@ -1,9 +1,9 @@
-streamlit
+#streamlit
 pandas
 sentence-transformers
 faiss-cpu
-google-generativeai
-python-dotenv
+#google-generativeai
+#python-dotenv
 fastapi
 uvicorn
 hf_xet
